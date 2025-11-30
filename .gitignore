@@ -1,135 +1,34 @@
-# Model Files (GGUF models are large - don't commit to git)
-*.gguf
-*.bin
-*.safetensors
-*.pth
-*.pt
-models/lora_checkpoints/
-models/*.gguf
-weights/
-checkpoints/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Build artifacts
-cpp/build/
-build/
-bin/
-obj/
-out/
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.dylib
-*.a
-*.lib
+# testing
+/coverage
 
-# CMake
-CMakeCache.txt
-CMakeFiles/
-CMakeScripts/
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps/
+# next.js
+/.next/
+/out/
 
-# Visual Studio
-.vs/
-*.vcxproj.user
-*.suo
-*.user
-*.sln.docstates
-x64/
-x86/
-Debug/
-Release/
+# production
+/build
 
-# Xcode
-*.xcodeproj
-*.xcworkspace
-DerivedData/
-
-# Datasets (large files - store externally)
-data/raw/
-data/processed/
-# Keep source datasets but exclude generated ones
-data/datasets/Output/lora_splits/
-data/datasets/Output/lora_training_data.json
-data/datasets/Output/rag_enhanced_prompts.json
-floorplans/
-training_data/
-
-# Test outputs
-test_outputs/
-generated_designs/
-inference_results/
-
-# Logs and temporary files
-*.log
-logs/
-temp/
-tmp/
-*.tmp
-*.swp
-*.swo
-*~
-
-# Python (if using hybrid setup or preprocessing scripts)
-__pycache__/
-*.py[cod]
-*$py.class
-venv/
-env/
-.env
-*.ipynb_checkpoints
-
-# RAG vector database (generated)
-data/furniture_db/
-
-# Evaluation results
-evaluation/
-
-# IDE files (keep config/ directory but ignore generated IDE files)
-config/.vscode/
-.idea/
-*.sublime-*
-.atom/
-
-# OS files
+# misc
 .DS_Store
-Thumbs.db
-desktop.ini
+*.pem
 
-# llama.cpp specific
-llama.cpp/build/
-llama.cpp/models/
-ggml-metal.metal
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Documentation build
-docs/_build/
-site/
+# local env files
+.env*.local
+.env
 
-# Dependencies (if using submodules, keep .gitmodules)
-third_party/*/build/
-vendor/*/build/
+# vercel
+.vercel
 
-# API keys and credentials
-.env.local
-config/secrets.*
-*.key
-credentials.json
-
-# Large media files for testing
-test_images/*.png
-test_images/*.jpg
-!test_images/sample.png  # Keep one small sample
-
-# Profiling and performance data
-*.prof
-perf.data*
-callgrind.out.*
-
-# Package manager
-conan/
-vcpkg/installed/
+# typescript
+*.tsbuildinfo
+next-env.d.ts
